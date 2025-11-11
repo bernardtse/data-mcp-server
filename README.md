@@ -11,9 +11,8 @@ Simple Python Data Analytics MCP Tool Server
 4. [Design Philosophy](#4-design-philosophy)
 5. [Sample Datasets](#5-sample-datasets)
 6. [Reference](#6-references)
-7. [Disclaimer](#7-disclaimer)
-8. [License](#8-license)
-9. [Author](#9-author)
+7. [License](#7-license)
+8. [Author](#8-author)
 
 ---
 
@@ -36,13 +35,13 @@ Python Files
 Datasets
 - [`datasets/`](datasets/)
   - employee_performance
-    - `employee_performance.csv`
-    - `employee_performance.json`
-    - `employee_performance.yaml`
+    - `datasets/employee_performance.csv`
+    - `datasets/employee_performance.json`
+    - `datasets/employee_performance.yaml`
   - sales_data
-    - `sales_data.csv`
-    - `sales_data.json`
-    - `sales_data.yaml`    
+    - `datasets/sales_data.csv`
+    - `datasets/sales_data.json`
+    - `datasets/sales_data.yaml`    
 
 Images
 - [`images/`](images/) - Folder containing screenshots
@@ -191,14 +190,14 @@ All JSON or YAML datasets are **row-oriented** (list of records) to mirror CSV s
 
 ### Snippets
 
-`sales_data.csv`
+`datasets/sales_data.csv`
 ```
 month,revenue,units_sold,best_performing_region
 Jan,12000,300,North
 Feb,15000,400,South
 ```
 
-`sales_data.json`
+`datasets/sales_data.json`
 ```
 [
   {"month": "Jan", "revenue": 12000, "units_sold": 300, "best_performing_region": "North"},
@@ -206,7 +205,7 @@ Feb,15000,400,South
 ]
 ```
 
-`sales_data.yaml`
+`datasets/sales_data.yaml`
 ```
 - month: Jan
   revenue: 12000
@@ -228,21 +227,13 @@ Feb,15000,400,South
 
 ---
 
-## 7. Disclaimer
-
-This project relies on **external data sources and JavaScript libraries**.  
-As these are hosted on third-party servers, some features, datasets, or external links **may become unavailable or broken over time**.  
-Functionality of the visualisations may vary depending on the availability of these external resources.
-
----
-
-## 8. License
+## 7. License
 
 - This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 - Developers are encouraged to enhance this prototype with additional features, support, and MCP API usage as desired.
 
 ---
 
-## 9. Author
+## 8. Author
 
 - Developed and maintained by [Bernard Tse](https://github.com/bernardtse), with support from [OpenAI](https://openai.com)’s ChatGPT for code refinement, optimisation, and debugging assistance.
