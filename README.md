@@ -84,7 +84,7 @@ uv sync
 ### 4. Download and install Claude Desktop
 
 - Follow the installation instructions [here](https://www.claude.com/download).
-- As of **November 2025**, Claude Desktop is not yet available for Linux. Linux users can explore[other compatible MCP clients](https://modelcontextprotocol.io/clients) as alternatives.
+- As of **November 2025**, Claude Desktop is not yet available for Linux. Linux users can explore [other compatible MCP clients](https://modelcontextprotocol.io/clients) as alternatives.
 
 ### 5. Install the MCP server onto Claude Desktop
 
@@ -109,7 +109,7 @@ uv run mcp install -e ./ data_mcp_server.py
 uv run mcp dev data_mcp_server.py
 ```
 
-- To run the MCP server on other 3rd-party clients (e.g. Cursor, Goose, etc.), locate the MCP configuration settings within the app. In some cases, this opens the MCP configuration file (JSON), which you’ll need to edit directly. If other MCP servers are already defined, add a new entry following the structure below. If the file is empty, replace its contents entirely with the JSON example. After saving any changes, restart the client.
+- To run the MCP server on other 3rd-party clients (e.g. Cursor, Goose, etc.), locate the MCP configuration settings within the app. In some clients, this opens the MCP configuration file (JSON) for direct editing. If other MCP servers are already defined, add a new entry following the structure below. If the file is empty, replace its contents entirely with the JSON example. After saving any changes, restart the client.
 
 ```json
 {
@@ -170,7 +170,7 @@ The design rationale:
 ### Other Design Choices
 - Uses **stdio** transport for simplicity, portability, and compatibility across environments.
 - Keeps the architecture lightweight and transparent for easier debugging and integration.
-- Recognises that the **MCP protocol** is still evolving, so this implementation favours clarity and maintainability over feature completeness.
+- Acknowledges that the **MCP protocol** is still evolving, so this implementation favours clarity and maintainability over feature completeness.
 
 ### Technologies Used
 - **Model Context Protocol (MCP)** - An open protocol introduced by [Anthropic](https://www.anthropic.com) that enables seamless integration between LLM applications and external data sources and tools
