@@ -10,7 +10,7 @@ Simple Python Data Analytics MCP Tool Server
 3. [Deployment](#3-deployment)
 4. [Design Philosophy](#4-design-philosophy)
 5. [Sample Datasets](#5-sample-datasets)
-6. [Reference](#6-references)
+6. [References](#6-references)
 7. [License](#7-license)
 8. [Author](#8-author)
 
