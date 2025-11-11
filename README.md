@@ -18,7 +18,7 @@ Simple Python Data Analytics MCP Tool Server
 
 ## 1. Overview
 
-This project is a **prototype** Data Analytics MCP Tool server that integrates deterministic Python analysis with LLM-driven interpretation, demonstrating a lightweight, controlled workflow through the MCP protocol. The server:
+This project is a **prototype** Data Analytics MCP Tool server that integrates deterministic Python analysis with LLM-driven interpretation, demonstrating a lightweight, controlled workflow through the Model Context Protocol (MCP). The server:
 
 - Loads **CSV**, **row-based JSON**, or **row-based YAML** datasets.
 - Performs simple **Python analysis**: basic information, numeric summary, categorical summary.
@@ -46,9 +46,9 @@ Datasets
 Images
 - [`images/`](images/) - Folder containing screenshots
 
-Project Files
-- pyproject.toml
-- uv.lock
+uv Project Files
+- `pyproject.toml`
+- `uv.lock`
 
 ---
 
