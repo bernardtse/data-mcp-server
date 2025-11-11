@@ -1,0 +1,11 @@
+[project]
+name = "data-mcp-server"
+version = "0.1.0"
+description = "Simple Python Data Analytics MCP Tool Server"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.21.0",
+    "pandas>=2.3.3",
+    "pyyaml>=6.0.3",
+]

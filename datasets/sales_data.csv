@@ -1,0 +1,13 @@
+month,revenue,units_sold,best_performing_region
+Jan,12000,300,North
+Feb,15000,400,South
+Mar,13000,350,East
+Apr,17000,500,West
+May,16000,450,Central
+Jun,18000,520,North
+Jul,19000,540,South
+Aug,17500,480,East
+Sep,20000,560,West
+Oct,21000,590,Central
+Nov,19500,510,North
+Dec,22000,600,South
