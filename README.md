@@ -163,7 +163,7 @@ This hybrid MCP server demonstrates a **controlled orchestration** between the t
 
 This prototype implements only **tool-calling** functionality (`mcp.tool()`), omitting `mcp.prompt()` and `mcp.resource()`.
 The design rationale:
-- As of **November 2025**, most third-party MCP clients provide stable support primarily for `mcp.tool()`.
+- As of **November 2025**, most 3rd-party MCP clients provide stable support primarily for `mcp.tool()`.
 - This approach simplifies implementation and avoids exposing unnecessary instructions or UI elements.
 - It keeps the workflow focused on deterministic Python execution, allowing the LLM to interpret outputs naturally.
 
