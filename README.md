@@ -83,7 +83,8 @@ uv sync
 
 ### 4. Download and install Claude Desktop
 
-- Instructions can be found [here](https://www.claude.com/download)
+- Follow the installation instructions [here](https://www.claude.com/download).
+- As of **November 2025**, Claude Desktop is not yet available for Linux. Linux users can explore[other compatible MCP clients](https://modelcontextprotocol.io/clients) as alternatives.
 
 ### 5. Install the MCP server onto Claude Desktop
 
@@ -101,16 +102,16 @@ uv run mcp install -e ./ data_mcp_server.py
 - Write a prompt to trigger data analysis. Make sure the prompt includes the **full pathname of the dataset file** (the pathname in the screenshot is just for reference).
 ![data-mcp-server](images/datamcp.png)
 
-### 7. Developer Mode (Dev Mode) and Others
+### 7. Developer Mode (Dev Mode) and others
 
 - Developers can activate **Dev mode** by running the following command in the repository folder:
 ```bash
 uv run mcp dev data_mcp_server.py
 ```
 
-- To run the MCP server on other 3rd party clients (e.g. Cursor, Goose, etc.), you may need to look for MCP configuration settings within the app. In some cases, the settings panel opens the configuration file (JSON), which you'll need to edit directly. After saving any changes, restart the client.
+- To run the MCP server on other 3rd-party clients (e.g. Cursor, Goose, etc.), locate the MCP configuration settings within the app. In some cases, this opens the MCP configuration file (JSON), which you’ll need to edit directly. If other MCP servers are already defined, add a new entry following the structure below. If the file is empty, replace its contents entirely with the JSON example. After saving any changes, restart the client.
 
-```
+```json
 {
   "mcpServers": {
     "Simple Python Data Analytics MCP Tool Server":{
@@ -139,8 +140,8 @@ uv run mcp dev data_mcp_server.py
     - Run the `where uv` command to display the full path to the `uv.exe` file.
     - In the configuration JSON file, replace `uv` with the pathname of `uv.exe`, e.g. `C:\\Users\\username\\.local\\bin\\uv.exe`.
     - If this still doesn't work, try adding `cmd /C` before `uv` or the pathname of `uv.exe`:
-        - `cmd /C uv`
-        - `cmd /C C:\\Users\\username\\.local\\bin\\uv.exe` (adjust the pathname as necessary)
+        - e.g. `cmd /C uv`
+        - e.g. `cmd /C C:\\Users\\username\\.local\\bin\\uv.exe` (adjust the pathname as necessary)
 
 ---
 
@@ -178,7 +179,8 @@ The design rationale:
 -	**pandas** - Data loading, transformation, and statistical summaries
 -	**PyYAML** - Parsing of YAML datasets
 - **uv** - Python package and project manager
-- **Claude Desktop** (MCP client) - Provides LLM-driven interpretation of Python analysis.
+  - Chosen for its superior speed, reproducibility, and dependency resolution compared to other managers, and because it is the **preferred package manager** recommended in the [**official MCP Python SDK**](https://github.com/modelcontextprotocol/python-sdk) and [**documentation**](https://modelcontextprotocol.io/docs/develop/build-server)
+- **Claude Desktop** (MCP client) - Provides LLM-driven interpretation of Python analysis
 
 ---
 
