@@ -100,6 +100,10 @@ uv run mcp install -e ./ data_mcp_server.py
 ![settings](images/settings.png)
 - Click the **Search and Tools** button located directly under the input field. Check that the `data-mcp-server` tool is enabled.
 - Write a prompt to trigger data analysis. Make sure the prompt includes the **full pathname of the dataset file** (the pathname in the screenshot is just for reference).
+```
+Analyse this file
+/Users/username/Desktop/data-mcp-server/datasets/sales_data.csv
+```
 ![data-mcp-server](images/datamcp.png)
 
 ### 7. Developer Mode (Dev Mode) and others
